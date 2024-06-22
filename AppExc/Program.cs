@@ -47,15 +47,22 @@ var service = new ApmAsync();
 var listOfTasks = new List<Task<string>>();
 var sw = new Stopwatch();
 sw.Start();
+var token = new CancellationToken();
+
 for (var i = 0; i < countOfFiles; i++)
 {
-    listOfTasks.Add(service.CalculateSha("./dummy_file_" + i, pattern.Value, sizeOfFile, key));
+    if (token.IsCancellationRequested)
+    {
+        break;
+    }
+    
+    var res = service.CalculateSha("./dummy_file_" + i, pattern.Value, sizeOfFile, key);
+    listOfTasks.Add(res);
 }
 
-var allLines = Task.WhenAll(listOfTasks);
+var allLines = await Task.WhenAll(listOfTasks);
 
-allLines.Wait();
 sw.Stop();
-File.WriteAllLines(outputFilePath, allLines.Result);
+await File.WriteAllLinesAsync(outputFilePath, allLines);
 
 Console.WriteLine("The end in time: " + sw.Elapsed);

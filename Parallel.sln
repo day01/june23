@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppExc", "AppExc\AppExc.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbmConsole", "EbmConsole\EbmConsole.csproj", "{8333EF76-DC85-4723-8617-5EA97BD34F7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspEbPattern", "AspEbPattern\AspEbPattern.csproj", "{22592011-FA1A-4349-81DB-C06415D79978}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8333EF76-DC85-4723-8617-5EA97BD34F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8333EF76-DC85-4723-8617-5EA97BD34F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8333EF76-DC85-4723-8617-5EA97BD34F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22592011-FA1A-4349-81DB-C06415D79978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22592011-FA1A-4349-81DB-C06415D79978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22592011-FA1A-4349-81DB-C06415D79978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22592011-FA1A-4349-81DB-C06415D79978}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

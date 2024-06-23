@@ -1,6 +1,6 @@
 namespace Sign.BoundContext.Domain;
 
-public class WeatherService(IWeatherRepository weatherRepository) : IWeatherService
+public class WeatherService(IWeatherRepository weatherRepository, IDateTimeProvider dateTimeProvider) : IWeatherService
 {
     public decimal GetTemp()
     {
@@ -15,6 +15,17 @@ public class WeatherService(IWeatherRepository weatherRepository) : IWeatherServ
     public WeatherForecast GetForecastExp()
     {
         throw new NotImplementedException();
+    }
+
+    public List<WeatherForecast> WeatherForecastOnNDays(int n)
+    {
+        var a = dateTimeProvider.GetDateOnly();
+        if (n == 5)
+        {
+            return new List<WeatherForecast>() {new(), new(), new()};
+        }
+
+        return new List<WeatherForecast>();
     }
 }
 

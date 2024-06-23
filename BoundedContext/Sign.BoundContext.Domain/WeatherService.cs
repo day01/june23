@@ -11,8 +11,11 @@ public class WeatherService(IWeatherRepository weatherRepository) : IWeatherServ
     {
         return new WeatherForecast {Temp = 9999};
     }
-    
-    
+
+    public WeatherForecast GetForecastExp()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 

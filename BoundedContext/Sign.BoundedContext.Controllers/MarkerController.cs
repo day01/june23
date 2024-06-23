@@ -5,7 +5,7 @@ using Sign.BoundedContext.Contract;
 
 namespace Sign.BoundedContext.Controllers;
 
-[Route("[controller]")]
+[Microsoft.AspNetCore.Components.Route("[controller]")]
 public class MarkerController(IMapper mapper, IWeatherService service)
 {
     [HttpGet("forecast")]

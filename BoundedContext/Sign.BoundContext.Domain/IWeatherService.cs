@@ -6,4 +6,6 @@ public interface IWeatherService
     
     
     WeatherForecast GetForecast();
+    
+    WeatherForecast GetForecastExp();
 }

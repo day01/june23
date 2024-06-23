@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Using Include="TechTalk.SpecFlow"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0"/>
+        <PackageReference Include="Selenium.WebDriver" Version="4.22.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="126.0.6478.6300" />
+        <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57"/>
+        <PackageReference Include="SpecRun.SpecFlow" Version="3.9.7"/>
+
+        <PackageReference Include="FluentAssertions" Version="6.2.0"/>
+    </ItemGroup>
+
+</Project>

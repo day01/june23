@@ -74,3 +74,25 @@ public class WeatherServiceTests
         Assert.Equal(expectedCount, actualResult.Count);
     }
 }
+
+/*
+request:
+POST /users HTTP/1.1
+Host: sth.de
+Content-Type: application/json
+Authorization: Bearer {token}
+{
+     "name": "John Doe",
+     "email": "john.doe@sth.de"
+}
+   
+response:
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+     "id": 123,
+     "name": "John Doe",
+     "email": "john.doe@sth.de"
+}
+
+*/

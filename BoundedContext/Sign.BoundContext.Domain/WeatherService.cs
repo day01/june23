@@ -17,6 +17,11 @@ public class WeatherService(IWeatherRepository weatherRepository, IDateTimeProvi
         throw new NotImplementedException();
     }
 
+    public List<WeatherForecast> WeatherForecastOnHolidays(int n, bool future)
+    {
+        throw new NotImplementedException();
+    }
+
     public List<WeatherForecast> WeatherForecastOnNDays(int n)
     {
         var a = dateTimeProvider.GetDateOnly();

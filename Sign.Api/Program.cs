@@ -37,6 +37,8 @@ builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
+builder.Services.AddScoped<IDateTimeProvider, DataTimeProvider>();
+
 builder.Services.AddAutoMapper(assemblies);
 
 var app = builder.Build();

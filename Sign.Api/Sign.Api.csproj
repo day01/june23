@@ -10,6 +10,12 @@
         <Content Update="appsettings.Development.json">
             <DependentUpon>appsettings.json</DependentUpon>
         </Content>
+        <Content Update="appsettings.Przemslaws-sdfsf.json">
+          <DependentUpon>appsettings.json</DependentUpon>
+        </Content>
+        <Content Update="appsettings.maks.json">
+          <DependentUpon>appsettings.json</DependentUpon>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>

@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sign.BoundContext.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sign.BoundContext.Infrastructure", "BoundedContext\Sign.BoundContext.Infrastructure\Sign.BoundContext.Infrastructure.csproj", "{8F44352C-8624-4C8B-A6D0-BA65805B6A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sign.Views", "Sign.Views\Sign.Views.csproj", "{9542D6E0-180D-4A39-9C01-23DB30B1C7C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{8F44352C-8624-4C8B-A6D0-BA65805B6A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F44352C-8624-4C8B-A6D0-BA65805B6A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F44352C-8624-4C8B-A6D0-BA65805B6A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9542D6E0-180D-4A39-9C01-23DB30B1C7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9542D6E0-180D-4A39-9C01-23DB30B1C7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9542D6E0-180D-4A39-9C01-23DB30B1C7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9542D6E0-180D-4A39-9C01-23DB30B1C7C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E0DFE633-20E9-4127-8609-F3099E7E3037} = {ACEB1D6D-39A1-4A9A-9D06-2A0020E24BD3}
